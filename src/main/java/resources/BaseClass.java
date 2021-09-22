@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
 	
@@ -21,7 +23,23 @@ public class BaseClass {
 		String browsername=prop.getProperty("Browser");
 		System.out.println("Browsername"+"= "+browsername);
 		
-		
+		if(browsername.equals("Chrome")) {
+			
+			System.setProperty("WebDriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
+			driver=new ChromeDriver();
+			
+		} else if(browsername.equals("firefox")) {
+			
+			System.setProperty("WebDriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
+			driver=new ChromeDriver();
+			
+		} else if(browsername.equals("IE")) {
+			
+			System.setProperty("WebDriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
+			driver=new ChromeDriver();
+			
+		}
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 		
 		
