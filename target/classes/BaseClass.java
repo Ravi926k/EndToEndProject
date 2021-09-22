@@ -17,25 +17,25 @@ public class BaseClass {
 	public WebDriver browser_initialization() throws IOException {
 		
 		prop=new Properties();
-		FileInputStream fis=new FileInputStream("F:\\A Java Selenium\\Real Project\\E2EProject\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis=new FileInputStream("C:\\Users\\Ravi\\eclipse-workspace\\EndToEndProject\\src\\main\\java\\resources\\dataset.properties");
 		
 		prop.load(fis);
 		String browsername=prop.getProperty("Browser");
 		System.out.println("Browsername"+"= "+browsername);
 		
-		if(browsername.equals("Chrome")) {
+		if(browsername.equals("chrome")) {
 			
-			System.setProperty("WebDriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		} else if(browsername.equals("firefox")) {
 			
-			System.setProperty("WebDriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driverr", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		} else if(browsername.equals("IE")) {
 			
-			System.setProperty("WebDriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		}

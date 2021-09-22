@@ -30,12 +30,30 @@ public class LoginPageObjects extends BaseClass {
 		this.driver = driver;
 	}
 
-	public WebElement loginbutton() {
+	public WebElement loginbtn() {
 		loginbutton.click();
+
+		
+		return loginbtn();
+	}
+
+	public WebElement getusername() {
+
 		email.sendKeys(prop.getProperty("username"));
+
+		return email;
+	}
+
+	public WebElement getpass() {
+
 		password.sendKeys(prop.getProperty("pass"));
+		return password;
+	}
+	
+	public WebElement getsubmit() {
+
 		submit.click();
-		return loginbutton;
+		return submit;
 	}
 
 }
