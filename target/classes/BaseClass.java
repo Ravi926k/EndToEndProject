@@ -27,6 +27,7 @@ public class BaseClass {
 			
 			System.setProperty("webdriver.chrome.driver", "F:\\A Java Selenium\\Softwares\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
+			driver.manage().window().maximize();
 			
 		} else if(browsername.equals("firefox")) {
 			
@@ -40,6 +41,7 @@ public class BaseClass {
 			
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		return driver;
 		
 		
