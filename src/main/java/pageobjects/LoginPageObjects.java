@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import resources.BaseClass;
 
@@ -14,46 +15,44 @@ public class LoginPageObjects extends BaseClass {
 	public Properties prop;
 
 	@FindBy(xpath = "//a[@class='theme-btn']")
-	WebElement loginbutton;
+	private WebElement loginbutton;
 
 	@FindBy(xpath = "//input[@type='email']")
 
-	WebElement email;
+	private WebElement email;
 
 	@FindBy(xpath = "//input[@type='password']")
-	WebElement password;
+	private WebElement password;
 	@FindBy(xpath = "//input[@class='btn btn-primary btn-md login-button']")
-	WebElement submit;
+	private WebElement submit;
 
 	public LoginPageObjects(WebDriver driver) {
 
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
-	public WebElement loginbtn() {
+	public void loginbtn() {
 		loginbutton.click();
 
-		
-		return loginbtn();
 	}
 
-	public WebElement getusername() {
+	public void getusername() {
 
-		email.sendKeys(prop.getProperty("username"));
+		email.sendKeys("ravismart926@gmail.com");
 
-		return email;
 	}
 
-	public WebElement getpass() {
+	public void getpass() {
 
-		password.sendKeys(prop.getProperty("pass"));
-		return password;
+		password.sendKeys("ravismart926");
+
 	}
-	
-	public WebElement getsubmit() {
+
+	public void getsubmit() {
 
 		submit.click();
-		return submit;
+
 	}
 
 }

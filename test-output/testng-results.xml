@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15671" started-at="2021-09-22T20:27:07 IST" finished-at="2021-09-22T20:27:23 IST">
+  <suite name="Suite" duration-ms="19380" started-at="2021-09-23T11:59:15 IST" finished-at="2021-09-23T11:59:34 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15671" started-at="2021-09-22T20:27:07 IST" finished-at="2021-09-22T20:27:23 IST">
+    <test name="Test" duration-ms="19380" started-at="2021-09-23T11:59:15 IST" finished-at="2021-09-23T11:59:34 IST">
       <class name="tescases.LoginPageTest">
-        <test-method status="PASS" signature="LaunchbrowserLogin()[pri:0, instance:tescases.LoginPageTest@587d1d39]" name="LaunchbrowserLogin" is-config="true" duration-ms="15003" started-at="2021-09-22T20:27:07 IST" finished-at="2021-09-22T20:27:22 IST">
+        <test-method status="PASS" signature="LaunchbrowserLogin()[pri:0, instance:tescases.LoginPageTest@587d1d39]" name="LaunchbrowserLogin" is-config="true" duration-ms="8755" started-at="2021-09-23T11:59:15 IST" finished-at="2021-09-23T11:59:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchbrowserLogin -->
-        <test-method status="FAIL" signature="loginToApplication()[pri:0, instance:tescases.LoginPageTest@587d1d39]" name="loginToApplication" duration-ms="29" started-at="2021-09-22T20:27:23 IST" finished-at="2021-09-22T20:27:23 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at pageobjects.LoginPageObjects.loginbtn(LoginPageObjects.java:34)
-at tescases.LoginPageTest.loginToApplication(LoginPageTest.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:tescases.LoginPageTest@587d1d39]" name="loginToApplication" duration-ms="10211" started-at="2021-09-23T11:59:24 IST" finished-at="2021-09-23T11:59:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="teardoen()[pri:0, instance:tescases.LoginPageTest@587d1d39]" name="teardoen" is-config="true" duration-ms="355" started-at="2021-09-22T20:27:23 IST" finished-at="2021-09-22T20:27:23 IST">
+        <test-method status="PASS" signature="teardoen()[pri:0, instance:tescases.LoginPageTest@587d1d39]" name="teardoen" is-config="true" duration-ms="292" started-at="2021-09-23T11:59:34 IST" finished-at="2021-09-23T11:59:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardoen -->
       </class> <!-- tescases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

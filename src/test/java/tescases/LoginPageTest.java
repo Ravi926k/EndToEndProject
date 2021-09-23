@@ -1,9 +1,11 @@
 package tescases;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -31,7 +33,7 @@ public class LoginPageTest extends BaseClass {
 		lp.loginbtn();
 		lp.getusername();
 		lp.getpass();
-		lp.getsubmit();
+		
 
 	}
 
