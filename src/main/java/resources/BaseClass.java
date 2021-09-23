@@ -8,11 +8,13 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 public class BaseClass {
 	
 	WebDriver driver;
 	Properties prop;
+	PageFactory page;
 	
 	public WebDriver browser_initialization() throws IOException {
 		
@@ -41,9 +43,9 @@ public class BaseClass {
 			
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		PageFactory.initElements(driver, this);
 		
 		return driver;
-		
 		
 		
 		

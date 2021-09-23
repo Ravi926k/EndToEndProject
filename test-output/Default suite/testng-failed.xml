@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tescases.LoginPageTest">
+      <class name="tescases.PracticePageTest">
         <methods>
-          <include name="loginToApplication"/>
           <include name="teardoen"/>
+          <include name="performactioninPracticepage"/>
           <include name="LaunchbrowserLogin"/>
         </methods>
-      </class> <!-- tescases.LoginPageTest -->
+      </class> <!-- tescases.PracticePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

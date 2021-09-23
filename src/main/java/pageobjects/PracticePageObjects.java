@@ -1,7 +1,5 @@
 package pageobjects;
 
-import java.util.Properties;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,9 +11,9 @@ import org.openqa.selenium.support.ui.Select;
 public class PracticePageObjects {
 
 	public WebDriver driver;
-	public Properties prop;
+	
 
-	@FindBy(xpath = "(//a[@href='#/practice-project'])[1]")
+	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[2]/nav[1]/div[2]/ul[1]/li[7]/a[1]")
 	private WebElement practicebtn;
 
 	@FindBy(xpath = "((//a[@href='https://rahulshettyacademy.com/AutomationPractice/'])[1]")
@@ -63,19 +61,12 @@ public class PracticePageObjects {
 		ac.sendKeys(Keys.DOWN).build().perform();
 		ac.sendKeys(Keys.ENTER).build().perform();
 	}
-	
-	public void dropDownhandle()  {
 
-		Select drop=new Select(dropdown);
-		
+	public void dropDownhandle() {
+
+		Select drop = new Select(dropdown);
+
 		drop.selectByIndex(2);
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 }
