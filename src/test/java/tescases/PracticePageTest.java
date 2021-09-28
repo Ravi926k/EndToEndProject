@@ -1,5 +1,6 @@
 package tescases;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -17,30 +18,25 @@ public class PracticePageTest extends BaseClass {
 
 	public WebDriver driver;
 	public Properties prop;
-	
 
 	@BeforeTest
 	public void LaunchbrowserLogin() throws IOException {
 
 		driver = browser_initialization();
 		driver.get("https://courses.rahulshettyacademy.com/");
-		LoginPageTest lt = new LoginPageTest();
 
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void performactioninPracticepage() throws InterruptedException {
 		PracticePageObjects pp = new PracticePageObjects(driver);
-
-		LoginPageObjects lp = new LoginPageObjects(driver);
-		lp.loginbtn();
-		lp.getusername();
-		lp.getpass();
-		
-		
 		pp.practicelink();
+		
+		pp.popuphandle();
 		pp.selectAutomationPractice2();
-		pp.selectRatiobtn();
+
+		//pp.selectRatiobtn();
+
 		pp.suggestTextBox();
 
 		pp.dropDownhandle();

@@ -1,6 +1,7 @@
 package tescases;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -28,13 +29,14 @@ public class LoginPageTest extends BaseClass {
 	}
 
 	@Test
-	public void loginToApplication() {
+	public  void loginToApplication() {
 
 		LoginPageObjects lp = new LoginPageObjects(driver);
 		lp.loginbtn();
 		lp.getusername();
 		lp.getpass();
-
+		lp.getsubmit();
+		
 	}
 
 	@AfterTest

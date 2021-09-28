@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28433" started-at="2021-09-23T17:56:32 IST" finished-at="2021-09-23T17:57:00 IST">
+  <suite name="Suite" duration-ms="60850" started-at="2021-09-28T13:50:42 IST" finished-at="2021-09-28T13:51:42 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="28433" started-at="2021-09-23T17:56:32 IST" finished-at="2021-09-23T17:57:00 IST">
+    <test name="Test" duration-ms="60850" started-at="2021-09-28T13:50:42 IST" finished-at="2021-09-28T13:51:42 IST">
       <class name="tescases.PracticePageTest">
-        <test-method status="PASS" signature="LaunchbrowserLogin()[pri:0, instance:tescases.PracticePageTest@587d1d39]" name="LaunchbrowserLogin" is-config="true" duration-ms="8873" started-at="2021-09-23T17:56:32 IST" finished-at="2021-09-23T17:56:40 IST">
+        <test-method status="PASS" signature="LaunchbrowserLogin()[pri:0, instance:tescases.PracticePageTest@7a9273a8]" name="LaunchbrowserLogin" is-config="true" duration-ms="8812" started-at="2021-09-28T13:50:51 IST" finished-at="2021-09-28T13:50:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchbrowserLogin -->
-        <test-method status="FAIL" signature="performactioninPracticepage()[pri:0, instance:tescases.PracticePageTest@587d1d39]" name="performactioninPracticepage" duration-ms="15316" started-at="2021-09-23T17:56:40 IST" finished-at="2021-09-23T17:56:56 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="performactioninPracticepage()[pri:1, instance:tescases.PracticePageTest@7a9273a8]" name="performactioninPracticepage" duration-ms="18191" started-at="2021-09-28T13:51:20 IST" finished-at="2021-09-28T13:51:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performactioninPracticepage -->
+        <test-method status="SKIP" signature="teardoen()[pri:0, instance:tescases.PracticePageTest@7a9273a8]" name="teardoen" is-config="true" duration-ms="-1632817302901" started-at="2021-09-28T13:51:42 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardoen -->
+      </class> <!-- tescases.PracticePageTest -->
+      <class name="tescases.LoginPageTest">
+        <test-method status="PASS" signature="LaunchbrowserLogin()[pri:0, instance:tescases.LoginPageTest@58c1670b]" name="LaunchbrowserLogin" is-config="true" duration-ms="8924" started-at="2021-09-28T13:50:42 IST" finished-at="2021-09-28T13:50:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchbrowserLogin -->
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:tescases.LoginPageTest@58c1670b]" name="loginToApplication" duration-ms="20239" started-at="2021-09-28T13:50:59 IST" finished-at="2021-09-28T13:51:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method status="FAIL" signature="teardoen()[pri:0, instance:tescases.LoginPageTest@58c1670b]" name="teardoen" is-config="true" duration-ms="4291" started-at="2021-09-28T13:51:38 IST" finished-at="2021-09-28T13:51:42 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/app-root[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[2]/nav[1]/div[2]/ul[1]/li[7]/a[1]"}
+              <![CDATA[chrome not reachable
   (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NFEO7DE', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f082f22930ac8b1fa99e81bde382b014
-*** Element info: {Using=xpath, value=/html[1]/body[1]/app-root[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[2]/nav[1]/div[2]/ul[1]/li[7]/a[1]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c0938363d702af2cacc73dee0a9079f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/app-root[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[2]/nav[1]/div[2]/ul[1]/li[7]/a[1]"}
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NFEO7DE', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f082f22930ac8b1fa99e81bde382b014
-*** Element info: {Using=xpath, value=/html[1]/body[1]/app-root[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[2]/nav[1]/div[2]/ul[1]/li[7]/a[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\Ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c0938363d702af2cacc73dee0a9079f
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -44,30 +58,20 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy9.click(Unknown Source)
-at pageobjects.PracticePageObjects.practicelink(PracticePageObjects.java:40)
-at tescases.PracticePageTest.performactioninPracticepage(PracticePageTest.java:41)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at tescases.LoginPageTest.teardoen(LoginPageTest.java:45)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
@@ -83,15 +87,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- performactioninPracticepage -->
-        <test-method status="PASS" signature="teardoen()[pri:0, instance:tescases.PracticePageTest@587d1d39]" name="teardoen" is-config="true" duration-ms="4185" started-at="2021-09-23T17:56:56 IST" finished-at="2021-09-23T17:57:00 IST">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardoen -->
-      </class> <!-- tescases.PracticePageTest -->
+      </class> <!-- tescases.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -13,13 +13,13 @@ public class PracticePageObjects {
 	public WebDriver driver;
 	
 
-	@FindBy(xpath = "/html[1]/body[1]/app-root[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[2]/nav[1]/div[2]/ul[1]/li[7]/a[1]")
+	@FindBy(xpath = "//div[@class='nav-outer clearfix']//a[normalize-space()='Practice']")
 	private WebElement practicebtn;
 
-	@FindBy(xpath = "((//a[@href='https://rahulshettyacademy.com/AutomationPractice/'])[1]")
+	@FindBy(xpath = "//a[normalize-space()='Automation Practise - 2']")
 	private WebElement automationparactice2;
 
-	@FindBy(css = "label[for='radio2']")
+	@FindBy(css = "//label[normalize-space()='Radio2']")
 	private WebElement radiobutton2;
 
 	@FindBy(id = "autocomplete")
@@ -27,7 +27,21 @@ public class PracticePageObjects {
 
 	@FindBy(css = "select[id='dropdown-class-example']")
 	private WebElement dropdown;
-
+	
+	@FindBy (xpath = "//input[@id='name']")
+	private WebElement username;
+	
+	@FindBy (xpath = "//input[@id='email']")
+	private WebElement email;
+	
+	@FindBy (xpath = "//button[@id='form-submit']")
+	private WebElement submit;
+	
+	@FindBy (xpath = "//input[@id='agreeTerms']")
+	private WebElement agree;
+	
+	
+	
 	public PracticePageObjects(WebDriver driver) {
 
 		this.driver = driver;
@@ -52,6 +66,45 @@ public class PracticePageObjects {
 		radiobutton2.click();
 
 	}
+	public void usernametext() {
+
+		username.sendKeys("ravichandran");
+
+	}
+	public void emailtext() {
+
+		email.sendKeys("ravismart926@gmail.com");
+
+	}
+	public void clicksubmit() {
+
+		submit.click();
+
+	}
+	
+	
+	
+	public void agreebox() {
+
+		agree.click();
+
+	}
+	
+	public void popuphandle() {
+		
+		if (username.isDisplayed()) {
+		usernametext();
+		emailtext();
+		agreebox();
+		clicksubmit();
+		}
+		else {
+			
+			System.out.println("No popup displayed ");
+		}
+	}
+	
+	
 
 	public void suggestTextBox() throws InterruptedException {
 
@@ -69,4 +122,8 @@ public class PracticePageObjects {
 		drop.selectByIndex(2);
 
 	}
+	
+	
+	
+	
 }
