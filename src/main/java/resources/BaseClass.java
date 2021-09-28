@@ -63,7 +63,7 @@ public class BaseClass {
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "\\reports" + "testcasename" + ".png";
+		String destination = System.getProperty("user.dir")+"\\reports\\"+testcasename+".png";
 		FileUtils.copyDirectory(source,new File(destination));
 
 		return destination;

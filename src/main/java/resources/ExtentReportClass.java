@@ -9,7 +9,7 @@ public class ExtentReportClass {
 	
 	public static ExtentReports getextentreport() {
 		
-		String reportpath=System.getProperty("user.dir")+"\\\\reports\\\\index.html";
+		String reportpath=System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter=new ExtentSparkReporter(reportpath);
 		
 		reporter.config().setReportName("Ravi Test Report");
